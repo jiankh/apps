@@ -108,6 +108,9 @@ h1 {
 .about-content > h2 {
     padding-bottom: 20px;
 }
+.about-content > p {
+    line-height: 1.5;
+}
 
 /* PROJECTS */
 .projects-container>h2 {
