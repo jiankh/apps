@@ -13,7 +13,7 @@ function createProject(img, title, description, codeLink, previewLink) {
             <div class="project-title">${title}</div>
             <div class="buttons">
                 <button onclick="location.href='${codeLink}';" ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> </button>
-                <button onclick="location.href='${previewLink}';"> <img src="dist/images/open-in-new.svg"> </button>
+                <button onclick="location.href='${previewLink}';"> <img src="/images/open-in-new.svg"> </button>
             </div>
         </div>
         <div class="description"> ${description} </div>
