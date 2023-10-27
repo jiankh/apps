@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    opacity: 0.7;
+    background-color: rgb(245, 245, 245, 0.5);
+
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+li>a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.about {
+    padding: 130px 150px 150px 150px;
+    display: flex;
+    justify-content: center;
+    background-image: url(/dist/images/abstract.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-logo {
+    min-width: 20vw;
+    background-image: url(/dist/images/ffflurry.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:40px;
+    aspect-ratio: 1;
+    border: 1px white solid;
+    box-shadow: 4px 4px 4px lightgray;
+    z-index: 1;
+}
+.about-logo > h3 {
+    margin-top: auto;
+}
+.about-logo > h1 {
+    margin:auto;
+    animation-duration: 1s;
+    animation-name: shift;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shift {
+    100% {
+        transform: translateX(4px);
+    }
+
+    0% {
+        transform: translateX(-4px);
+    }
+}
+
+.about-content {
+    border: 1px solid lightgray;
+    padding: 30px;
+    margin:30px;
+    margin-left: 0;
+    box-shadow: 3px 3px 3px lightgrey;
+    max-width: 600px;
+    background-color: white;
+}
+.about-content > h2 {
+    padding-bottom: 20px;
+}
+
+/* PROJECTS */
+.projects-container>h2 {
+    padding: 30px;
+    font-size: 2rem;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    overflow: auto;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    padding:20px;
+    border:white 1px solid;
+}
+
+.projects-container {
+    padding: 0 50px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-img>img {
+    width: 400px;
+    height: 400px;
+    object-fit:contain;
+}
