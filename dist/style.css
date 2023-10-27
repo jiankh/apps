@@ -53,14 +53,14 @@ h1 {
     padding: 130px 150px 150px 150px;
     display: flex;
     justify-content: center;
-    background-image: url(/dist/images/abstract.png);
+    background-image: url(dist/images/abstract.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .about-logo {
     min-width: 20vw;
-    background-image: url(/dist/images/ffflurry.svg);
+    background-image: url(dist/images/ffflurry.svg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
