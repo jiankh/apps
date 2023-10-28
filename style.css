@@ -281,6 +281,18 @@ textarea {
     color:black
 }
 
+@media (max-width:1000px) {
+    .contact-info {
+        flex-direction: row;
+        gap:20%;
+        justify-content: space-around;
+    }
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+}
+
 .contact-info>a:hover {
     font-weight: 900;
 }
