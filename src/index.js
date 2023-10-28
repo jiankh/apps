@@ -89,12 +89,16 @@ window.addEventListener('scroll', function() {
 
 //Contact Form
 const contactForm = document.querySelector(".contact-form")
+let messageStatusContainer = document.querySelector(".message-status")
+
 contactForm.addEventListener("submit", (e) => {
     e.preventDefault()
     emailjs.sendForm('contact_service', 'template_8649fbq', contactForm, 'UUZ2U3JvBit2rQvCl')
         .then(function() {
-            console.log('success')
+            messageStatusContainer.textContent = "Message sent!"
+            contactForm.reset()
         }, function(error) {
-            console.log('Failed', error)
+            messageStatusContainer.textContent = `Error: ${error}`
+            contactForm.reset()
         })
 })

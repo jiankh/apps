@@ -319,6 +319,11 @@ textarea {
     font-weight: 900;
 }
 
+.message-status {
+    font-style: italic;
+    color: red;
+}
+
 footer {
     text-align: center;
     padding:10px;
