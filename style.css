@@ -4,7 +4,7 @@
 }
 
 :root {
-    --theme-color: #eef3f7;
+    --theme-color: #e8edf1;
 }
 
 /* HEADER */
@@ -375,6 +375,7 @@ footer {
     background: -ms-linear-gradient(left top, #858585, #525252);
     background: linear-gradient(to right bottom, var(--theme-color), #ffffff);
     align-self: center;
+    z-index: 1;
 }
   .background-animation {
     
