@@ -66,7 +66,7 @@ const Projects = [
     },
     {
         title: "Task To-Do List",
-        img: "",
+        img: "./images/wip.png",
         description: "[WIP] A To-Do List application. Features options to create sections and add tasks to the specific section that can be checked off. The focus of this project was to use LocalStorage to manage user information and organize the project in Modules while using Webpack.",
         codeLink: "https://github.com/jiankh/to-do-list",
         previewLink: ""

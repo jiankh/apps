@@ -27,14 +27,36 @@ function createProject(img, title, description, codeLink, previewLink) {
 Projects.forEach((project) => {
     createProject(project.img, project.title, project.description, project.codeLink, project.previewLink)
 })
-const disabledButtons = document.querySelectorAll('input[type="button"][onclick="location.href=\'\';"]');
+const disabledButtons = document.querySelectorAll('[onclick="location.href=\'\';"]');
 disabledButtons.forEach((button)=> {
     button.disabled = true
+    button.classList.add('disabled-btn')
 })
 
+//Navigation bar focus 
+// document.addEventListener('scroll', async () => {
+//     const sections = document.querySelectorAll(".section")
+//     let currentSection = ""
+
+//     sections.forEach(section => {
+//         const rect = section.getBoundingClientRect()
+//         if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+//             currentSection = section.id
+//         }
+//     })
+
+//     //removing active class from everything
+//     document.querySelectorAll("li a").forEach(sect => {
+//         sect.classList.remove("active-nav")
+//     })
+
+//     //adding active class 
+//     document.querySelector(`a[href="#${currentSection}"]`).classList.add('active-nav')
+
+// })
 
 
-//Scrolling
+//Project scrolling transition
 window.addEventListener('scroll', function() {
     const desiredScrollPosition = 900; // Change this value to the desired scroll position
     const projectContainer = document.querySelector(".projects-container");
@@ -65,8 +87,14 @@ window.addEventListener('scroll', function() {
 })
 
 
-//send button
-// const sendButton = document.querySelector(".send-message-btn")
-// sendButton.addEventListener("click", (e) => {
-//     e.preventDefault()
-// })
+//Contact Form
+const contactForm = document.querySelector(".contact-form")
+contactForm.addEventListener("submit", (e) => {
+    e.preventDefault()
+    emailjs.sendForm('contact_service', 'template_8649fbq', contactForm, 'UUZ2U3JvBit2rQvCl')
+        .then(function() {
+            console.log('success')
+        }, function(error) {
+            console.log('Failed', error)
+        })
+})
