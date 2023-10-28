@@ -1,7 +1,8 @@
 import Projects from "./projectData.js"
 
-const projectContainer = document.querySelector(".projects")
 
+//PROJECT LOADING
+const projectContainer = document.querySelector(".projects")
 function createProject(img, title, description, codeLink, previewLink) {
     const project = document.createElement("div")
     project.classList.add("project")
@@ -13,7 +14,7 @@ function createProject(img, title, description, codeLink, previewLink) {
             <div class="project-title">${title}</div>
             <div class="buttons">
                 <button onclick="location.href='${codeLink}';" ><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" /> </button>
-                <button onclick="location.href='${previewLink}';"> <img src="/images/open-in-new.svg"> </button>
+                <button onclick="location.href='${previewLink}';"> <img src="images/open-in-new.svg"> </button>
             </div>
         </div>
         <div class="description"> ${description} </div>
@@ -23,7 +24,6 @@ function createProject(img, title, description, codeLink, previewLink) {
 
     projectContainer.appendChild(project)
 }
-
 Projects.forEach((project) => {
     createProject(project.img, project.title, project.description, project.codeLink, project.previewLink)
 })
@@ -32,9 +32,11 @@ disabledButtons.forEach((button)=> {
     button.disabled = true
 })
 
+
+
 //Scrolling
 window.addEventListener('scroll', function() {
-    const desiredScrollPosition = 500; // Change this value to the desired scroll position
+    const desiredScrollPosition = 900; // Change this value to the desired scroll position
     const projectContainer = document.querySelector(".projects-container");
     const project = document.querySelectorAll(".project")
 
@@ -47,3 +49,24 @@ window.addEventListener('scroll', function() {
         project.forEach(proj => proj.classList.remove("scroll-move"))
     }
 })
+
+
+//Fade transition for technology
+window.addEventListener('scroll', function() {
+    const desiredScrollPosition = 500; // Change this value to the desired scroll position
+    const technologies = document.querySelectorAll(".tech");
+
+    if (window.scrollY >= desiredScrollPosition) {
+        technologies.forEach(tech => tech.classList.add("fade-in"))
+        
+    } else {
+        technologies.forEach(tech => tech.classList.remove("fade-in"))
+    }
+})
+
+
+//send button
+// const sendButton = document.querySelector(".send-message-btn")
+// sendButton.addEventListener("click", (e) => {
+//     e.preventDefault()
+// })

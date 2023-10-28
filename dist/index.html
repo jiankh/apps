@@ -11,14 +11,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="header-wrapper">
+        <div class="header-wrapper" id="header">
             <div class="logo">JH</div>
             <nav>
                 <ul>
                     <li><a href="">About</a></li>
+                    <li><a href="#technology">Technologies</a>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -29,7 +34,7 @@
     <div class="about">
         <div class="about-logo">           
             <h1> Jean <br> Huang</h1>
-            <h3>Aspiring Software Engineer</h3>
+            <h3>NYC / Aspiring Software Engineer</h3>
         </div>
         <div class="about-content">
             <h2>About Me</h2>
@@ -37,19 +42,76 @@
         </div>
     </div>
 
+    <div class="technology" id="technology">
+        <div class="subtitle">Technologies</div>
+        <div class="technology-container">
+            <div class="tech technology-1">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            </div>
+            <div class="tech technology-2">   
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+            </div>
+            <div class="tech technology-3">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+            </div>
+            <div class="tech technology-4">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+            </div>
+            <div class="tech technology-5">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
+            </div>
+            <div class="tech technology-6">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+            </div>
+            <div class="tech technology-7">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+            </div>
+            <div class="tech technology-8">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original-wordmark.svg" />
+            </div>
+            <div class="tech technology-9">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
+            </div>
+            <div class="tech technology-10">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+            </div>
+        </div>
+    </div>
+
     <div class="projects-container" id="projects">
-        <h2>Projects</h2>
+        <h2 class="subtitle" >Projects</h2>
         <div class="projects">
 
         </div>
     </div>
 
     <div class="contact-container" id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            Dont contact me pls ty
+        <h2 class="subtitle">Contact Me</h2>
+        <div class="contact-wrapper">
+            <div class="contact-message">
+                <form class="contact-form" action="mailto:jiank20l@gmail.com" method="post" >
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <textarea  rows="10" cols="60" name="message" id="message" placeholder="Message . . ."> </textarea>
+                    <button class="send-message-btn">Send</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <a href="https://www.linkedin.com/in/jchuangz/">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" />
+                    LinkedIn
+                </a>
+                <a href="https://github.com/jiankh">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                    GitHub
+                </a>
+
+                
+            </div>
         </div>
     </div>
+
+    <footer>Jean Huang 2023</footer>
     
 </body>
 </html>

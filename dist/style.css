@@ -9,8 +9,8 @@ header {
     top: 0;
     left:0;
     width: 100%;
-    opacity: 0.7;
-    background-color: rgb(245, 245, 245, 0.5);
+    /* opacity: 0.7; */
+    background-color: rgb(245, 245, 245);
     z-index: 2;
 }
 
@@ -80,22 +80,55 @@ h1 {
 }
 .about-logo > h1 {
     margin:auto;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-name: shift;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    font-family: Libre Baskerville, Arial, Helvetica, sans-serif;
 }
+
+/* Animation on-load */
+.about-logo {
+    animation-duration:1s;
+    animation-name: drop-in;
+    animation-iteration-count: 1;
+}
+@keyframes drop-in {
+    from {
+        transform: translateY(-30px);
+    }
+    to {
+        transform: translateY(0);
+    } 
+}
+
+.about-content {
+    animation-duration:1s;
+    animation-name: slide-in;
+    animation-iteration-count: 1;
+}
+@keyframes slide-in {
+    from {
+        transform: translateX(30px);
+    }
+    to {
+        transform: translateX(0);
+    } 
+}
+
 
 @keyframes shift {
     100% {
-        transform: translateX(4px);
+        transform: translateX(3px);
     }
 
     0% {
-        transform: translateX(-4px);
+        transform: translateX(-3px);
     }
 }
 
+
+/* About content */
 .about-content {
     border: 1px solid lightgray;
     padding: 30px;
@@ -112,9 +145,10 @@ h1 {
     line-height: 1.5;
 }
 
+
 /* PROJECTS */
-.projects-container>h2 {
-    padding: 30px;
+.subtitle {
+    padding: 50px 100px;
     font-size: 2rem;
 }
 
@@ -152,6 +186,7 @@ h1 {
 
 .projects-container {
     padding: 50px;
+    transition: all 1s ease-out;
 }
 
 .project-header {
@@ -198,4 +233,88 @@ button:hover {
 .scroll-move {
     transform: translateY(30px);
     transition: transform 1s ease-out 0.5s;
+}
+
+/* CONTACT */
+.contact-container {
+    margin:50px;
+}
+
+.contact-wrapper {
+    display:flex;
+    justify-content: center;
+    gap: 10vw;
+
+}
+
+.contact-message>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form>* {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+textarea {
+    resize:none
+}
+
+#send-message-btn:hover {
+    font-weight: 800;
+}
+
+.contact-info {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-info>a {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    gap:20px;
+    text-decoration: none;
+    color:black
+}
+
+.contact-info>a:hover {
+    font-weight: 900;
+}
+
+
+/* TECHNOLOGIES */
+.technology {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:50px;
+}
+
+.technology-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    justify-items: center;
+    padding: 90px;
+}
+
+.tech {
+    width: 95px;
+    opacity: 0.6;
+    transition:all 0.5s ease-in;
+}
+
+.fade-in {
+    opacity: 1;
+    width:105px;
+}
+
+footer {
+    text-align: center;
+    padding:10px;
+    background-color: rgb(211, 211, 211, 0.6);
 }
