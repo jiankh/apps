@@ -16,6 +16,13 @@ const Projects = [
         previewLink: "https://jiankh.github.io/dsa_exercises/"
     },
     {
+        title: "CV Builder",
+        img: "./images/cvbuilder.png",
+        description: "A simple but effective CV Layout Builder made with React. Allows the user to create an efficient resume in no time, and download it for use.",
+        codeLink: "https://github.com/jiankh/CVMaker",
+        previewLink: "https://jiankh.github.io/CVMaker/"
+    },
+    {
         title: "Bakery Website",
         img: "./images/bakery.png",
         description: "Frontend React website for a mock restaurant with several functional tabs. The main focus of this project was to modulize the elements of the site for better reusability. The menu items are also stored in an array of object that can easily by editted to add and remove menu items.",
@@ -66,7 +73,7 @@ const Projects = [
     },
     {
         title: "Task To-Do List",
-        img: "./images/wip.png",
+        img: "./images/WIP.png",
         description: "[WIP] A To-Do List application. Features options to create sections and add tasks to the specific section that can be checked off. The focus of this project was to use LocalStorage to manage user information and organize the project in Modules while using Webpack.",
         codeLink: "https://github.com/jiankh/to-do-list",
         previewLink: ""
@@ -77,14 +84,7 @@ const Projects = [
         description: "An application that lets user save information about books that they are interested in. The user can also change and see the status of the books if they finished reading it or not.",
         codeLink: "https://github.com/jiankh/libraryProject",
         previewLink: "https://jiankh.github.io/libraryProject/"
-    },
-    {
-        title: "Dashboard",
-        img: "./images/dashboard.png",
-        description: "A simple sample Dashboard created that focuses on UX and Grid Layouts in CSS",
-        codeLink: "https://github.com/jiankh/dashboardSample",
-        previewLink: "https://jiankh.github.io/dashboardSample/"
-    }   
+    },  
 ]
 
 export default Projects

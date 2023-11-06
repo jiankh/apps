@@ -34,7 +34,7 @@ disabledButtons.forEach((button)=> {
 })
 
 //Navigation bar focus 
-// document.addEventListener('scroll', async () => {
+// document.addEventListener('scroll', () => {
 //     const sections = document.querySelectorAll(".section")
 //     let currentSection = ""
 
