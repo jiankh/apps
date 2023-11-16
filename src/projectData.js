@@ -23,6 +23,13 @@ const Projects = [
         previewLink: "https://jiankh.github.io/CVMaker/"
     },
     {
+        title: "Genshin Memo",
+        img: "./images/genshin.png",
+        description: "A simple memory game that consists of the player choosing character cards from the popular online RPG Genshin Impact without repeating the same characters. The game was made in React and Vite.",
+        codeLink: "https://github.com/jiankh/genshin-memo",
+        previewLink: "https://jiankh.github.io/genshin-memo/"
+    },
+    {
         title: "Bakery Website",
         img: "./images/bakery.png",
         description: "Frontend React website for a mock restaurant with several functional tabs. The main focus of this project was to modulize the elements of the site for better reusability. The menu items are also stored in an array of object that can easily by editted to add and remove menu items.",
@@ -70,13 +77,6 @@ const Projects = [
         description: "A classic game of Rock Paper Scissors. First to win 5 rounds wins the match! ",
         codeLink: "https://github.com/jiankh/RPS_game",
         previewLink: "https://jiankh.github.io/RPS_game/"
-    },
-    {
-        title: "Task To-Do List",
-        img: "./images/WIP.png",
-        description: "[WIP] A To-Do List application. Features options to create sections and add tasks to the specific section that can be checked off. The focus of this project was to use LocalStorage to manage user information and organize the project in Modules while using Webpack.",
-        codeLink: "https://github.com/jiankh/to-do-list",
-        previewLink: ""
     },
     {
         title: "Library App",
