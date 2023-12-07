@@ -30,6 +30,13 @@ const Projects = [
         previewLink: "https://jiankh.github.io/genshin-memo/"
     },
     {
+        title: "Fake Market",
+        img: "./images/fake-market.png",
+        description: "A fake e-commerce shop using FakeStore API to retrieve sample items. Features a working shopping cart with quantities and price. Also, the website stores data into the users LocalStorage so data will not be lost. Built using React, Vite, and TailwindCSS.",
+        codeLink: "https://github.com/jiankh/fake-market",
+        previewLink: "https://fake-market.vercel.app/"
+    },
+    {
         title: "Bakery Website",
         img: "./images/bakery.png",
         description: "Frontend React website for a mock restaurant with several functional tabs. The main focus of this project was to modulize the elements of the site for better reusability. The menu items are also stored in an array of object that can easily by editted to add and remove menu items.",
@@ -78,13 +85,13 @@ const Projects = [
         codeLink: "https://github.com/jiankh/RPS_game",
         previewLink: "https://jiankh.github.io/RPS_game/"
     },
-    {
-        title: "Library App",
-        img: "./images/library.png",
-        description: "An application that lets user save information about books that they are interested in. The user can also change and see the status of the books if they finished reading it or not.",
-        codeLink: "https://github.com/jiankh/libraryProject",
-        previewLink: "https://jiankh.github.io/libraryProject/"
-    },  
+    // {
+    //     title: "Library App",
+    //     img: "./images/library.png",
+    //     description: "An application that lets user save information about books that they are interested in. The user can also change and see the status of the books if they finished reading it or not.",
+    //     codeLink: "https://github.com/jiankh/libraryProject",
+    //     previewLink: "https://jiankh.github.io/libraryProject/"
+    // },  
 ]
 
 export default Projects
